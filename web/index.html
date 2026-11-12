@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRED-TMR — Transmembrane segment prediction</title>
+  <meta name="description"
+        content="Predict transmembrane segments from a protein sequence. Runs entirely in your browser via WebAssembly." />
+  <link rel="icon" href="PRED-TMR-logo.gif" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img class="logo" src="PRED-TMR-logo.gif" alt="PRED-TMR logo" width="72" height="72" />
+    <div class="site-title">
+      <h1>PRED-TMR</h1>
+      <p class="tagline">Transmembrane segment prediction — runs entirely in your browser (WebAssembly).</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="card input-card" aria-labelledby="input-heading">
+      <h2 id="input-heading">Input sequence</h2>
+      <p class="hint">
+        Paste a raw sequence or FASTA/SwissProt record. FASTA headers are detected automatically.
+      </p>
+
+      <label class="visually-hidden" for="sequence-input">Protein sequence</label>
+      <textarea id="sequence-input" spellcheck="false"
+                placeholder=">my_protein&#10;MNSVPLVLAAVALLALAAALAAAAPGGGAAA..." ></textarea>
+
+      <div class="examples" role="group" aria-label="Example sequences">
+        <span class="examples-label">Examples:</span>
+        <button type="button" class="ghost example-btn" data-example="bacteriorhodopsin">Bacteriorhodopsin</button>
+        <button type="button" class="ghost example-btn" data-example="synthetic-tm">Synthetic TM</button>
+        <button type="button" class="ghost example-btn" data-example="no-tm">Soluble protein</button>
+      </div>
+
+      <div class="actions">
+        <button type="button" id="predict-btn" class="primary" disabled>Predict</button>
+        <button type="button" id="clear-btn" class="ghost">Clear</button>
+      </div>
+
+      <p id="status" class="status" role="status" aria-live="polite">Loading prediction engine…</p>
+    </section>
+
+    <section class="card results-card" aria-labelledby="results-heading">
+      <h2 id="results-heading">Results</h2>
+
+      <div id="empty-state" class="empty-state">
+        No prediction yet. Paste a sequence and press <strong>Predict</strong>.
+      </div>
+
+      <div id="results" hidden>
+        <div class="summary" id="summary"></div>
+
+        <h3>Annotated sequence</h3>
+        <p class="hint">
+          Transmembrane residues are highlighted. Position ruler is shown per line.
+        </p>
+        <div id="sequence-view" class="sequence-view" aria-label="Annotated sequence"></div>
+
+        <h3>Predicted segments</h3>
+        <div class="table-wrap">
+          <table id="segments-table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Start</th>
+                <th scope="col">End</th>
+                <th scope="col">Length</th>
+                <th scope="col">Score</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      PRED-TMR port (phase B). The original method follows
+      <em>Pasquier & Hamodrakas</em>. Predictions are computed locally with the
+      validated C++ kernel compiled to WebAssembly — no sequence leaves your device.
+    </p>
+  </footer>
+
+  <script src="predtmr.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
