@@ -37,6 +37,10 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # Enable Pages automatically if not yet configured in repo settings
+          # (avoids "Get Pages site failed ... HttpError: Not Found").
+          enablement: true
 
       - name: Upload portal artifact
         uses: actions/upload-pages-artifact@v3
