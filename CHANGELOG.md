@@ -20,6 +20,8 @@ First release of the modernised PRED-TMR (C++17 edition).
   historical reference results.
 - CI workflows: GitHub Actions (`build.yml`, `pages.yml`) and CNRS Koda
   GitLab (`.gitlab-ci.yml`) running the same native build + test gates.
+- `legacy/`: the untouched 1999 sources (`PRED-TMR.cpp`, `PRED-TMR.h`),
+  preserved for provenance.
 - Zenodo metadata, CITATION.cff with the original 1999 Protein Engineering
   paper, GPL-2.0-or-later license, AUTHORS.md.
 

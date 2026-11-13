@@ -55,7 +55,10 @@ The static WASM portal is deployed via GitHub Pages by the workflow
   and **Stavros J. Hamodrakas** (see [`AUTHORS.md`](AUTHORS.md)).
 - **[modernised: 2026]** The modern C++17 re-implementation (validated kernel,
   CLI, WebAssembly portal, CI) was produced at **Université Côte d'Azur, CNRS,
-  I3S (Sophia Antipolis), France** by **Claude Pasquier**.
+  I3S (Sophia Antipolis), France** by **Claude Pasquier**. The untouched 1999
+  sources are preserved in [`legacy/`](legacy/) for provenance; the kernel in
+  [`src/core/`](src/core/) is a faithful port of the historical `MarkTM()`
+  segmentation and `rating()` routines found there.
 
 ## Historical access
 
@@ -78,6 +81,9 @@ PRED-TMR/
 ├── tests/                  # doctest unit tests
 ├── scripts/build-wasm.sh   # one-shot Emscripten build
 ├── docs/ALGORITHM.md       # full description of the PRED-TMR method
+├── legacy/                 # untouched 1999 sources (provenance):
+│                             PRED-TMR.cpp / PRED-TMR.h — the original
+│                             MarkTM() / rating() implementation
 ├── CITATION.cff            # machine-readable citation metadata
 ├── AUTHORS.md              # original authors + modern port credits
 └── web/                    # static portal + generated predtmr.js / predtmr.wasm

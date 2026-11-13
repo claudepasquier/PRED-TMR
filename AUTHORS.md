@@ -28,5 +28,5 @@ ERBFMRXCT960019.
 
 The modern re-implementation in this repository (validated kernel, CLI,
 WebAssembly bindings, web portal and CI) was produced as a faithful port of
-the historical `MarkTM()` segmentation and `rating()` routines, without
-altering the protein logic.
+the historical `MarkTM()` segmentation and `rating()` routines (preserved
+untouched in [`legacy/`](legacy/)), without altering the protein logic.
