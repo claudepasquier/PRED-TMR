@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use PRED-TMR, please cite the following reference."
+title: "PRED-TMR: prediction of transmembrane segments in proteins"
+authors:
+  - family-names: Pasquier
+    given-names: Claude
+  - family-names: Promponas
+    given-names: Vasilis J.
+  - family-names: Palaios
+    given-names: Georgios A.
+  - family-names: Hamodrakas
+    given-names: Ioannis S.
+  - family-names: Hamodrakas
+    given-names: Stavros J.
+keywords:
+  - transmembrane segments
+  - hydrophobicity analysis
+  - membrane proteins
+  - protein structure prediction
+  - bioinformatics
+type: software
+license: GPL-2.0-or-later
+version: 1.0.0
+# date-released refers to the modernised software release; the original
+# publication year (1999) is kept in preferred-citation below.
+date-released: "2026-11-12"
+preferred-citation:
+  type: article
+  title: "A novel method for predicting transmembrane segments in proteins based on a statistical analysis of the SwissProt database: the PRED-TMR algorithm"
+  authors:
+    - family-names: Pasquier
+      given-names: Claude
+    - family-names: Promponas
+      given-names: Vasilis J.
+    - family-names: Palaios
+      given-names: Georgios A.
+    - family-names: Hamodrakas
+      given-names: Ioannis S.
+    - family-names: Hamodrakas
+      given-names: Stavros J.
+  journal: "Protein Engineering"
+  volume: 12
+  issue: 5
+  pages: "381-385"
+  year: 1999
+  publisher:
+    name: Oxford University Press

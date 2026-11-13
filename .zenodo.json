@@ -1,0 +1,49 @@
+{
+    "title": "PRED-TMR: prediction of transmembrane segments in proteins",
+    "description": "<p>Modern C++17 re-implementation of the PRED-TMR algorithm (Pasquier et al., 1999), a statistical method that predicts transmembrane segments in protein sequences using only sequence information. It refines a hydrophobicity analysis with the detection of favourable terminal (start/end) configurations of transmembrane regions. This release provides a validated C++17 kernel, a native command-line interface, doctest unit tests, a WebAssembly module with a static web portal, and CI workflows.</p>",
+    "creators": [
+        {
+            "name": "Pasquier, Claude",
+            "affiliation": "Division of Cell Biology and Biophysics, Department of Biology, University of Athens, Greece (original work, 1999); Université Côte d'Azur, CNRS, I3S, Sophia Antipolis, France (modernised edition, 2026)"
+        },
+        {
+            "name": "Promponas, Vasilis J.",
+            "affiliation": "University of Athens, Faculty of Biology, Department of Cell Biology and Biophysics, Greece"
+        },
+        {
+            "name": "Palaios, Georgios A.",
+            "affiliation": "University of Athens, Faculty of Biology, Department of Cell Biology and Biophysics, Greece"
+        },
+        {
+            "name": "Hamodrakas, Ioannis S.",
+            "affiliation": "University of Athens, Faculty of Biology, Department of Cell Biology and Biophysics, Greece"
+        },
+        {
+            "name": "Hamodrakas, Stavros J.",
+            "affiliation": "University of Athens, Faculty of Biology, Department of Cell Biology and Biophysics, Greece"
+        }
+    ],
+    "keywords": [
+        "transmembrane segments",
+        "hydrophobicity analysis",
+        "membrane proteins",
+        "protein structure prediction",
+        "bioinformatics"
+    ],
+    "license": "GPL-2.0-or-later",
+    "language": "eng",
+    "access_right": "open",
+    "upload_type": "software",
+    "version": "1.0.0",
+    "publication_date": "2026-11-12",
+    "related_identifiers": [
+        {
+            "identifier": "10.1093/protein/12.5.381",
+            "relation": "isSupplementTo",
+            "resource_type": "publication-article"
+        }
+    ],
+    "references": [
+        "Pasquier, C., Promponas, V.J., Palaios, G.A., Hamodrakas, J.S. and Hamodrakas, S.J. (1999). A novel method for predicting transmembrane segments in proteins based on a statistical analysis of the SwissProt database: the PRED-TMR algorithm. Protein Engineering 12(5), 381-385."
+    ]
+}
