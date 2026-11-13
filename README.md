@@ -1,5 +1,5 @@
 # PRED-TMR
-
+[![DOI](https://zenodo.org/badge/1455525750.svg)](https://doi.org/10.5281/zenodo.24191779)
 [![build](https://github.com/claudepasquier/PRED-TMR/actions/workflows/build.yml/badge.svg)](https://github.com/claudepasquier/PRED-TMR/actions/workflows/build.yml)
 [![pages](https://github.com/claudepasquier/PRED-TMR/actions/workflows/pages.yml/badge.svg)](https://github.com/claudepasquier/PRED-TMR/actions/workflows/pages.yml)
 [![CI pipeline (Koda)](https://src.koda.cnrs.fr/uoa-biol/PRED-TMR/badges/main/pipeline.svg)](https://src.koda.cnrs.fr/uoa-biol/PRED-TMR/-/pipelines)
